@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '1.0.0'
+version = '3.1.0'
 
 setup(
     name='ckanext-dcatde',
@@ -23,6 +23,8 @@ setup(
     ],
     entry_points='''
     [ckan.plugins]
+    dcatde_rdf_harvester=ckanext.dcatde.harvesters.dcatde_rdf:DCATdeRDFHarvester
+
     dcatde=ckanext.dcatde.plugins:DCATdePlugin
 
     [ckan.rdf.profiles]
